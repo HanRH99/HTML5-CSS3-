@@ -1,0 +1,44 @@
+LESSON01
+1. HTML의 역할
+	HTML(Hyper Text Markup Language): 웹 문서를 기술하기 위한 마크업 언어의 한 종류
+		*마크업: 콘텐츠의 시작과 끝에 태그(Tag)라 불리는 표시를 붙여 그 부분이 어디에 해당되는지 의미를 부여하는 것
+2. HTML의 기본 구문
+	1) 요소(Element): 시작과 종료 태그 사이의 범위
+		- html을 구성하는 가장 기본적인 단위
+	2) 속성(Attribute): 요소에 다양한 옵션 설정 역할을 하는 것
+		- 각 요소에 공통적으로 사용할 수 있는 것, 특정 요소에만 사용하는 것
+3. HTML 문서의 기본 구조
+	→ html 요소 안에 head 요소와 body 요소가 들어가는 구조
+	→ html 요소 시작 전 문서 첫머리에 독타입(DOCTYPE) 선언 기술해 문서에서 사용할 HTML의 종류 지정
+	1) DOCTYPE: 사용할 HTML의 종류를 선언하는 부분
+	2) html 요소: HTML 문서의 최상위 요소로 문서의 루트(root)요소라고도 한다.
+	3) head 요소: 문서 제목, 문자코드, 키워드, 설명문, 관련 파일 등과 같은 문서의 기본 정보를 기술하는 부분
+			→ head 요소에 기술하는 것은 브라우저에 나타나지 않음
+	4) body 요소: 내용을 기술하는 부분
+			→ body 요소에 기술하는 것이 실제 브라우저 화면에 나타남
+4. DOM 트리: HTML 문서는 그릇이 포개져 있는 것과 같이 큰 그릇이 작은 그릇을 담는 듯한 구조로 되어 있는 것을 트리 형태로 나타낸 것
+		→ 상위 요소 = 부모 요소
+		→ 하위 요소 = 자식 요소
+5. DOCTYPE 선언(문서형 선언)
+6. html 요소
+	→ HTML 문서의 최상위 요소
+	→ 문서 전체를 포괄하는 요소
+	→ 일반적으로 lang 속성(문서의 언어코드)을 기술하는 것이 관례
+	→ 대표적인 언어코드: ko(한국어), en(영어), ja(일본어), zh(중국어)
+	→ <html land="ko">
+7. head 요소: HTML 문서의 제목, 문자코드, 키워드 등 문서의 보충 정보를 기재하는 것
+	→ CSS나 JavaScript 같은 외부 로딩 파일 지정뿐만 아니라 검색 엔진을 위한 검색 키워드 정보까지 기술 가능
+	→ <head> ~ </head>
+8. title 요소: HTML의 제목을 표시하는 것
+	→ 검색엔진 최적화(SEO: Search Engine Optimization)에 매우 중요
+	→ 모든 HTML 문서는 그와 관련된 내용을 적절하게 나타내는 내용을 title 요소로 설정해야 함
+9. meta 요소: 문자코드나 문서의 개요, 키워드 등 브라우저 화면에는 나타나지 않는 문서 정보를 기술하는 데 필요한 요소
+	→ 주요 meta 요소
+		1) <meta charset="utf-8">
+		2) <meta name="description" content="문서의 개요가 들어갑니다">
+		3) <meta name="keywords" content="키워드 A, 키워드 B">
+10. 문자코드 지정
+	→ HTML 문서는 head 요소 안에 반드시 문자코드를 지정해야 함
+	→ <meta charset="utf-8">
+	→ <meta http-equiv="Content-Type" content="text/html; charset="UTF-8">
+	→ HTML 파일의 실제 문자코드와 meta 요소의 문자코드를 반드시 일치시켜 지정해야 함
